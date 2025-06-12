@@ -1,0 +1,65 @@
+* {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.careers-header {
+  background-color: #4db6ac;
+  color: white;
+  padding: 3rem;
+  text-align: center;
+}
+
+section.job {
+  background: white;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 900px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.job h2 {
+  color: #00796b;
+  margin-top: 0;
+}
+
+.job h3 {
+  color: #004d40;
+  margin-bottom: 0.5rem;
+}
+
+.job ul {
+  padding-left: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.job ul li {
+  margin-bottom: 0.6rem;
+  line-height: 1.5;
+  font-size: 0.97rem;
+}
+
+.job ul li:nth-child(odd) {
+  font-size: 0.97rem;
+}
+
+.job ul li:nth-child(even) {
+  font-size: 0.97rem;
+}
+
+button {
+  background-color: #00796b;
+  color: white;
+  padding: 0.7rem 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #004d40;
+}
+

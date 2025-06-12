@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Dental Care</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/services.css" class="css-link">
+</head>
+<body>
+    <!-- HEADER START -->
+    <header class="header-container">
+        <div class="header-content">
+            <!-- Logo Section -->
+            <div class="logo-section">
+                <div class="logo">
+                    <img src="../images/logo.jpg" alt="Dental Logo" class="logo-img">
+                    <div class="logo-text">
+                        Dynamic Dental Care
+                        <div class="logo-subtitle">Excellence in Dentistry</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Content Area (Desktop) -->
+            <div class="right-content">
+                <!-- Top Row - Contact Information -->
+                <div class="contact-row">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div class="contact-details">
+                                <div>Call Now!</div>
+                                <div>+1 610-365-3266</div>
+                            </div>
+                        </div>
+                        <a href="https://www.google.com/maps/place/141+E+Emmaus+Ave,+Allentown,+PA+18103/@40.5812286,-75.4479628,16z/data=!3m1!4b1!4m6!3m5!1s0x89c43bee76766713:0xd74e3b38d318abc5!8m2!3d40.5812286!4d-75.4479628!16s%2Fg%2F11c2h1w0kv?entry=ttu&g_ep=EgoyMDI1MDYwOC4wIKXMDSoASAFQAw%3D%3D" style="text-decoration: none;">
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div class="contact-details">
+                                <div>141 E Emmaus Ave, Allentown, PA</div>
+                                <div>18103, United States</div>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                    <button class="book-appointment">Book An Appointment</button>
+                </div>
+
+                <!-- Bottom Row - Navigation -->
+                <div class="nav-row">
+                    <nav class="navigation">
+                        <div class="nav-item-wrapper">
+                                <a href="../index.html" class="nav-item">Home</a>
+                        </div>
+                        <div class="nav-item-wrapper">
+                            <a href="../html/DentalImplants.html" class="nav-item dropdown">Our Services</a>
+                            <div class="dropdown-content">
+                                <a href="../html/DentalImplants.html">Dental Implants</a>
+                                <a href="../html/ComprehensiveCheck-Up.html">Comprehensive Check-Up</a>
+                                <a href="../html/Veneers.html">Veneers</a>
+                                <a href="../html/TeethWhitening.html">Teeth Whitening</a>
+                                <a href="../html/Children'sDentistry.html">Children's Dentistry</a>
+                                <a href="../html/SleepApnea.html">Sleep Apnea Treatment</a>
+                                <a href="../html/ChippedTooth.html">Chipped Tooth</a>
+                                <a href="../html/NightGrinding.html">Night Grinding</a>
+                                <a href="../html/DentalImplants.html">View All Services</a>
+                            </div>
+                        </div>
+                        <div class="nav-item-wrapper">
+                            <a href="../html/patientfinance.html" class="nav-item">Patient Finance</a>
+                        </div>
+                        <div class="nav-item-wrapper">
+                            <a href="../html/blog.html" class="nav-item dropdown">About Us</a>
+                            <div class="dropdown-content">
+                                <a href="../html/ourteam.html">Our Team</a>
+                                <a href="../html/ourstory.html">Our Story</a>
+                                <a href="../html/officetour.html">Office Tour</a>
+                                <a href="../html/patienttestimonials.html">Patient Testimonials</a>
+                                <a href="../html/blog.html">Blog</a>
+                            </div>
+                        </div>
+                        <div class="nav-item-wrapper">
+                            <a href="../html/careers.html" class="nav-item">Careers</a>
+                        </div>
+                        <div class="nav-item-wrapper">
+                            <a href="../html/contactus.html" class="nav-item dropdown">Contact Us</a>
+                            <div class="dropdown-content">
+                                <a href="../html/contactus.html">Location & Hours</a>
+                                <a href="../html/RequestAppointment.html">Request Appointment</a>
+                                <a href="../html/PatientForms.html">Patient Forms</a>
+                                <a href="../html/contactus.html">Emergency Care</a>
+                                <a href="../html/faqs.html">FAQs</a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>
+        </div>
+    </header>
+
+    <!-- Mobile Sidebar -->
+    <div class="mobile-overlay" onclick="closeMobileMenu()"></div>
+    <div class="mobile-sidebar" id="mobileSidebar">
+        <button class="close-sidebar" onclick="closeMobileMenu()">×</button>
+        <nav class="mobile-nav">
+            <a href="../index.html" class="mobile-nav-item">Home</a>
+            
+            <a href="../html/DentalImplants.html" class="mobile-nav-item has-dropdown" onclick="toggleDropdown(this)">Our Services</a>
+            <div class="mobile-dropdown">
+                    <a href="../html/DentalImplants.html">Dental Implants</a>
+                    <a href="../html/ComprehensiveCheck-Up.html">Comprehensive Check-Up</a>
+                    <a href="../html/Veneers.html">Veneers</a>
+                    <a href="../html/TeethWhitening.html">Teeth Whitening</a>
+                    <a href="../html/Children'sDentistry.html">Children's Dentistry</a>
+                    <a href="../html/SleepApnea.html">Sleep Apnea Treatment</a>
+                    <a href="../html/ChippedTooth.html">Chipped Tooth</a>
+                    <a href="../html/NightGrinding.html">Night Grinding</a>
+                    <a href="../html/DentalImplants.html">View All Services</a>
+            </div>
+            
+            <a href="../html/patientfinance.html" class="mobile-nav-item">Patient Finance</a>
+            
+            <a href="../html/blog.html" class="mobile-nav-item has-dropdown" onclick="toggleDropdown(this)">About Us</a>
+            <div class="mobile-dropdown">
+                    <a href="../html/ourteam.html">Our Team</a>
+                    <a href="../html/ourstory.html">Our Story</a>
+                    <a href="../html/officetour.html">Office Tour</a>
+                    <a href="../html/patienttestimonials.html">Patient Testimonials</a>
+                    <a href="../html/blog.html">Blog</a>
+            </div>
+            
+            <a href="../html/careers.html" class="mobile-nav-item">Careers</a>
+            
+            <a href="../html/contactus.html" class="mobile-nav-item has-dropdown" onclick="toggleDropdown(this)">Contact Us</a>
+            <div class="mobile-dropdown">
+                    <a href="../html/contactus.html">Location & Hours</a>
+                    <a href="../html/RequestAppointment.html">Request Appointment</a>
+                    <a href="../html/PatientForms.html">Patient Forms</a>
+                    <a href="../html/contactus.html">Emergency Care</a>
+                    <a href="../html/faqs.html">FAQs</a>
+            </div>
+
+            <!-- Mobile Contact Info -->
+            <div style="padding: 20px 25px; border-top: 2px solid #f0f0f0; margin-top: 20px;">
+                <div style="margin-bottom: 15px; color: #2c5aa0; font-weight: bold;">Contact Information</div>
+                <div style="margin-bottom: 10px; color: #495057;">
+                    <strong>📞 Call:</strong> +1 610-365-3266
+                </div>
+                <div style="margin-bottom: 15px; color: #495057; font-size: 14px;">
+                    <strong>📍 Address:</strong><br>
+                    2405 PA-100, Orefield, PA 18069
+                </div>
+                <button class="book-appointment" style="width: 100%; margin-top: 10px;">Book An Appointment</button>
+            </div>
+        </nav>
+    </div>
+
+    <!-- HEADER END -->
+
+    <!-- MAIN CONTENT START -->
+
+    <section class="main-section-container">
+    <!-- Header -->
+    <header class="main-content-header-section">
+        <h1 class="main-content-header-title">Sleep Apnea & Snoring Treatment</h1>
+    </header>
+
+    <!-- Main Container -->
+    <div class="main-container">
+        <!-- Main Content -->
+        <main class="main-content" id="main-content">
+            <h2 class="content-title">Sleep Apnea & Snoring Treatment: Breathe Better, Sleep Better</h2>
+
+<p class="intro-text">
+    <strong>Do you snore loudly or wake up feeling tired, even after a full night’s sleep?</strong>
+    You might be suffering from <em>sleep apnea</em>—a common but serious sleep disorder that affects your breathing during sleep.
+</p>
+
+<div class="content-section">
+    <div class="content-image-wrapper">
+        <img src="../images/Sleep_Apnea.jpg" alt="Sleep apnea treatment device" class="content-image">
+    </div>
+    <div class="content-text-wrapper">
+        <h3 class="content-subtitle">What Is Sleep Apnea?</h3>
+        <p class="content-description">
+            Sleep apnea occurs when your breathing repeatedly stops and starts during sleep. It can be caused by a blocked airway (obstructive sleep apnea), brain signal issues (central sleep apnea), or a combination of both.
+        </p>
+        <ul class="highlight-list">
+            <li>Loud snoring</li>
+            <li>Gasping for air during sleep</li>
+            <li>Daytime fatigue</li>
+            <li>Morning headaches</li>
+            <li>Difficulty concentrating</li>
+        </ul>
+    </div>
+</div>
+
+<div class="content-section">
+    <div class="content-text-wrapper">
+        <h3 class="content-subtitle">The Dental Connection</h3>
+        <p class="content-description">
+            Many people are surprised to learn that dentists can help treat sleep apnea. At our dental clinic, we offer
+            <strong>oral appliance therapy</strong>—a custom-made device worn during sleep to keep your airway open.
+        </p>
+    </div>
+</div>
+
+<div class="content-section">
+    <div class="content-text-wrapper">
+        <h3 class="content-subtitle">Oral Appliance Therapy Benefits</h3>
+        <ul class="highlight-list">
+            <li>Comfortable and easy to wear</li>
+            <li>Travel-friendly (unlike bulky CPAP machines)</li>
+            <li>Non-invasive and silent</li>
+            <li>Clinically proven to reduce snoring and improve sleep quality</li>
+        </ul>
+    </div>
+</div>
+
+<div class="content-section">
+    <div class="content-text-wrapper">
+        <h3 class="content-subtitle">Is Oral Appliance Therapy Right for You?</h3>
+        <p class="content-description">This treatment is ideal for:</p>
+        <ul class="highlight-list">
+            <li>Mild to moderate obstructive sleep apnea</li>
+            <li>CPAP-intolerant patients</li>
+            <li>Chronic snorers affecting their partner’s sleep</li>
+        </ul>
+    </div>
+</div>
+
+<div class="highlight-box">
+    <p class="highlight-text">
+        If you or your loved one struggles with snoring or poor sleep, schedule a consultation with our dental sleep team.
+        We’ll assess your symptoms, refer for a sleep study if needed, and fit you with a device tailored to your needs.
+    </p>
+</div>
+
+<p class="intro-text">
+    <strong>A better night’s sleep starts with a healthy airway. Let us help you rest easy.</strong>
+</p>
+
+        </main>
+
+        <!-- Right Sidebar Navigation -->
+        <aside class="sidebar-navigation">
+            <h3 class="sidebar-title">Our Services</h3>
+            <nav class="services-nav">
+                <ul class="main-content-nav-list">
+                    <li class="main-content-nav-item">
+                        <a href="../html/DentalImplants.html" class="main-content-nav-link main-content-nav-link-active">
+                            <span class="main-content-nav-text">Dental Implants</span>
+                            <span class="main-content-nav-arrow">→</span>
+                        </a>
+                    </li>
+                    <li class="main-content-nav-item">
+                        <a href="../html/ComprehensiveCheck-Up.html" class="main-content-nav-link">
+                            <span class="main-content-nav-text">Comprehensive Check-Up</span>
+                            <span class="main-content-nav-arrow">→</span>
+                        </a>
+                    </li>
+                    <li class="main-content-nav-item">
+                        <a href="../html/Veneers.html" class="main-content-nav-link" >
+                            <span class="main-content-nav-text">Veneers</span>
+                            <span class="main-content-nav-arrow">→</span>
+                        </a>
+                    </li>
+                    <li class="main-content-nav-item">
+                        <a href="../html/TeethWhitening.html" class="main-content-nav-link">
+                            <span class="main-content-nav-text">Teeth Whitening</span>
+                            <span class="main-content-nav-arrow">→</span>
+                        </a>
+                    </li>
+                    <li class="main-content-nav-item">
+                        <a href="../html/Children'sDentistry.html" class="main-content-nav-link" >
+                            <span class="main-content-nav-text">Children's Dentistry</span>
+                            <span class="main-content-nav-arrow">→</span>
+                        </a>
+                    </li>
+                    <li class="main-content-nav-item">
+                        <a href="../html/SleepApnea.html" class="main-content-nav-link" >
+                            <span class="main-content-nav-text">Sleep Apnea & Snoring Treatment</span>
+                            <span class="main-content-nav-arrow">→</span>
+                        </a>
+                    </li>
+                    <li class="main-content-nav-item">
+                        <a href="../html/ChippedTooth.html" class="main-content-nav-link" >
+                            <span class="main-content-nav-text">Chipped Tooth</span>
+                            <span class="main-content-nav-arrow">→</span>
+                        </a>
+                    </li>
+                    <li class="main-content-nav-item">
+                        <a href="../html/NightGrinding.html" class="main-content-nav-link" >
+                            <span class="main-content-nav-text">Night Grinding</span>
+                            <span class="main-content-nav-arrow">→</span>
+                        </a>
+                    </li>
+                    <li class="main-content-nav-item">
+                        <a href="../html/RootCanals.html" class="main-content-nav-link" >
+                            <span class="main-content-nav-text">Root Canals</span>
+                            <span class="main-content-nav-arrow">→</span>
+                        </a>
+                    </li>
+                    <li class="main-content-nav-item">
+                        <a href="../html/DentalCrowns.html" class="main-content-nav-link" >
+                            <span class="main-content-nav-text">Dental Crowns</span>
+                            <span class="main-content-nav-arrow">→</span>
+                        </a>
+                    </li>
+                    <li class="main-content-nav-item">
+                        <a href="../html/CosmeticDentistry.html" class="main-content-nav-link" >
+                            <span class="main-content-nav-text">Cosmetic Dentistry</span>
+                            <span class="main-content-nav-arrow">→</span>
+                        </a>
+                    </li>
+                    <li class="main-content-nav-item">
+                        <a href="../html/EmergencyDentistry.html" class="main-content-nav-link" >
+                            <span class="main-content-nav-text">Emergency Dentistry</span>
+                            <span class="main-content-nav-arrow">→</span>
+                        </a>
+                    </li>
+                    <li class="main-content-nav-item">
+                        <a href="../html/Orthodontics.html" class="main-content-nav-link" >
+                            <span class="main-content-nav-text">Orthodontics</span>
+                            <span class="main-content-nav-arrow">→</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+    </div>
+  </section>
+
+    <!-- MAIN CONTENT END -->
+
+    <!-- FOOTER START -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Dynamic Dental Care</h3>
+                <p>141 E Emmaus Ave, Allentown, PA 18103, United States</p>
+                <p>Phone: +1 (610) 365 3266</p>
+                <p>Email: info@dynamicdentalcare.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../html/DentalImplants.html">Our Services</a></li>
+                    <li><a href="../html/patientfinance.html">Patient Finance</a></li>
+                    <li><a href="../html/blog.html">About Us</a></li>
+                    <li><a href="../html/careers.html">Careers</a></li>
+                    <li><a href="../html/contactus.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Office Hours</h3>
+                <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
+                <p>Saturday: 9:00 AM - 2:00 PM</p>
+                <p>Sunday: Closed</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Dynamic Dental Care. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <!-- FOOTER END -->
+
+  <script src="../js/common.js"></script>
+  <script src="../js/services.js" class="js-script"></script>
+</body>
+
+</html>

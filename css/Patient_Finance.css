@@ -1,0 +1,129 @@
+* {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Hero Section Styles */
+.finance-hero {
+  background-color: #2d2c2a;
+  color: #ffffff;
+  padding: 4rem 0 0;
+  font-family: 'Georgia', serif;
+}
+
+.finance-hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+
+.finance-image-wrapper {
+  flex: 1 1 400px;
+  text-align: center;
+}
+
+.finance-image {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 4px;
+}
+
+.finance-text-content {
+  flex: 1 1 500px;
+}
+
+.finance-label {
+  color: #80cbc4;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.finance-title {
+  font-size: 4rem;
+  line-height: 1.2;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+.finance-subtitle {
+  font-style: italic;
+  color: #80cbc4;
+  font-size: 2.3rem;
+}
+
+/* CTA Bar Styles */
+.finance-cta-bar {
+  background-color: #4db6ac;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+
+
+.finance-cta-button {
+  align-self: center;
+  background: #ffffff;
+  color: #2d2c2a;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 999px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.finance-cta-button:hover {
+  background: #eeeeee;
+}
+
+/* Payment Options Section */
+.payment-options-section {
+  background-color: #f4f9fa;
+  color: #2d2c2a;
+  padding: 4rem 2rem;
+  font-family: 'Georgia', serif;
+}
+
+.payment-options-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.payment-options-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.payment-options-intro,
+.payment-options-description {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.payment-options-subheading {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 2rem 0 1rem;
+}
+
+.payment-options-list {
+  padding-left: 1.5rem;
+}
+
+.payment-option-item {
+  font-size: 1.1rem;
+  margin-bottom: 0.8rem;
+  list-style: disc;
+}

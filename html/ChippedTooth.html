@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Dental Care</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/services.css" class="css-link">
+</head>
+<body>
+    <!-- HEADER START -->
+    <header class="header-container">
+        <div class="header-content">
+            <!-- Logo Section -->
+            <div class="logo-section">
+                <div class="logo">
+                    <img src="../images/logo.jpg" alt="Dental Logo" class="logo-img">
+                    <div class="logo-text">
+                        Dynamic Dental Care
+                        <div class="logo-subtitle">Excellence in Dentistry</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Content Area (Desktop) -->
+            <div class="right-content">
+                <!-- Top Row - Contact Information -->
+                <div class="contact-row">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div class="contact-details">
+                                <div>Call Now!</div>
+                                <div>+1 610-365-3266</div>
+                            </div>
+                        </div>
+                        <a href="https://www.google.com/maps/place/141+E+Emmaus+Ave,+Allentown,+PA+18103/@40.5812286,-75.4479628,16z/data=!3m1!4b1!4m6!3m5!1s0x89c43bee76766713:0xd74e3b38d318abc5!8m2!3d40.5812286!4d-75.4479628!16s%2Fg%2F11c2h1w0kv?entry=ttu&g_ep=EgoyMDI1MDYwOC4wIKXMDSoASAFQAw%3D%3D" style="text-decoration: none;">
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div class="contact-details">
+                                <div>141 E Emmaus Ave, Allentown, PA</div>
+                                <div>18103, United States</div>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                    <button class="book-appointment">Book An Appointment</button>
+                </div>
+
+                <!-- Bottom Row - Navigation -->
+                <div class="nav-row">
+                    <nav class="navigation">
+                        <div class="nav-item-wrapper">
+                                <a href="../index.html" class="nav-item">Home</a>
+                        </div>
+                        <div class="nav-item-wrapper">
+                            <a href="../html/DentalImplants.html" class="nav-item dropdown">Our Services</a>
+                            <div class="dropdown-content">
+                                <a href="../html/DentalImplants.html">Dental Implants</a>
+                                <a href="../html/ComprehensiveCheck-Up.html">Comprehensive Check-Up</a>
+                                <a href="../html/Veneers.html">Veneers</a>
+                                <a href="../html/TeethWhitening.html">Teeth Whitening</a>
+                                <a href="../html/Children'sDentistry.html">Children's Dentistry</a>
+                                <a href="../html/SleepApnea.html">Sleep Apnea Treatment</a>
+                                <a href="../html/ChippedTooth.html">Chipped Tooth</a>
+                                <a href="../html/NightGrinding.html">Night Grinding</a>
+                                <a href="../html/DentalImplants.html">View All Services</a>
+                            </div>
+                        </div>
+                        <div class="nav-item-wrapper">
+                            <a href="../html/patientfinance.html" class="nav-item">Patient Finance</a>
+                        </div>
+                        <div class="nav-item-wrapper">
+                            <a href="../html/blog.html" class="nav-item dropdown">About Us</a>
+                            <div class="dropdown-content">
+                                <a href="../html/ourteam.html">Our Team</a>
+                                <a href="../html/ourstory.html">Our Story</a>
+                                <a href="../html/officetour.html">Office Tour</a>
+                                <a href="../html/patienttestimonials.html">Patient Testimonials</a>
+                                <a href="../html/blog.html">Blog</a>
+                            </div>
+                        </div>
+                        <div class="nav-item-wrapper">
+                            <a href="../html/careers.html" class="nav-item">Careers</a>
+                        </div>
+                        <div class="nav-item-wrapper">
+                            <a href="../html/contactus.html" class="nav-item dropdown">Contact Us</a>
+                            <div class="dropdown-content">
+                                <a href="../html/contactus.html">Location & Hours</a>
+                                <a href="../html/RequestAppointment.html">Request Appointment</a>
+                                <a href="../html/PatientForms.html">Patient Forms</a>
+                                <a href="../html/contactus.html">Emergency Care</a>
+                                <a href="../html/faqs.html">FAQs</a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>
+        </div>
+    </header>
+
+    <!-- Mobile Sidebar -->
+    <div class="mobile-overlay" onclick="closeMobileMenu()"></div>
+    <div class="mobile-sidebar" id="mobileSidebar">
+        <button class="close-sidebar" onclick="closeMobileMenu()">×</button>
+        <nav class="mobile-nav">
+            <a href="../index.html" class="mobile-nav-item">Home</a>
+            
+            <a href="../html/DentalImplants.html" class="mobile-nav-item has-dropdown" onclick="toggleDropdown(this)">Our Services</a>
+            <div class="mobile-dropdown">
+                    <a href="../html/DentalImplants.html">Dental Implants</a>
+                    <a href="../html/ComprehensiveCheck-Up.html">Comprehensive Check-Up</a>
+                    <a href="../html/Veneers.html">Veneers</a>
+                    <a href="../html/TeethWhitening.html">Teeth Whitening</a>
+                    <a href="../html/Children'sDentistry.html">Children's Dentistry</a>
+                    <a href="../html/SleepApnea.html">Sleep Apnea Treatment</a>
+                    <a href="../html/ChippedTooth.html">Chipped Tooth</a>
+                    <a href="../html/NightGrinding.html">Night Grinding</a>
+                    <a href="../html/DentalImplants.html">View All Services</a>
+            </div>
+            
+            <a href="../html/patientfinance.html" class="mobile-nav-item">Patient Finance</a>
+            
+            <a href="../html/blog.html" class="mobile-nav-item has-dropdown" onclick="toggleDropdown(this)">About Us</a>
+            <div class="mobile-dropdown">
+                    <a href="../html/ourteam.html">Our Team</a>
+                    <a href="../html/ourstory.html">Our Story</a>
+                    <a href="../html/officetour.html">Office Tour</a>
+                    <a href="../html/patienttestimonials.html">Patient Testimonials</a>
+                    <a href="../html/blog.html">Blog</a>
+            </div>
+            
+            <a href="../html/careers.html" class="mobile-nav-item">Careers</a>
+            
+            <a href="../html/contactus.html" class="mobile-nav-item has-dropdown" onclick="toggleDropdown(this)">Contact Us</a>
+            <div class="mobile-dropdown">
+                    <a href="../html/contactus.html">Location & Hours</a>
+                    <a href="../html/RequestAppointment.html">Request Appointment</a>
+                    <a href="../html/PatientForms.html">Patient Forms</a>
+                    <a href="../html/contactus.html">Emergency Care</a>
+                    <a href="../html/faqs.html">FAQs</a>
+            </div>
+
+            <!-- Mobile Contact Info -->
+            <div style="padding: 20px 25px; border-top: 2px solid #f0f0f0; margin-top: 20px;">
+                <div style="margin-bottom: 15px; color: #2c5aa0; font-weight: bold;">Contact Information</div>
+                <div style="margin-bottom: 10px; color: #495057;">
+                    <strong>📞 Call:</strong> +1 610-365-3266
+                </div>
+                <div style="margin-bottom: 15px; color: #495057; font-size: 14px;">
+                    <strong>📍 Address:</strong><br>
+                    2405 PA-100, Orefield, PA 18069
+                </div>
+                <button class="book-appointment" style="width: 100%; margin-top: 10px;">Book An Appointment</button>
+            </div>
+        </nav>
+    </div>
+
+    <!-- HEADER END -->
+
+    <!-- MAIN CONTENT START -->
+
+    <section class="main-section-container">
+    <!-- Header -->
+    <header class="main-content-header-section">
+        <h1 class="main-content-header-title">Chipped Tooth</h1>
+    </header>
+
+    <!-- Main Container -->
+    <div class="main-container">
+        <!-- Main Content -->
+        <main class="main-content" id="main-content">
+            <h2 class="content-title">Chipped Tooth: Causes, Risks, and Treatment Options</h2>
+
+<p class="intro-text">
+    A chipped tooth is one of the most common dental injuries—and it can happen to anyone. Whether from an accident, biting something hard, or natural wear, a chipped tooth can affect your smile, comfort, and oral health. Understanding what causes it and how to treat it is key to preventing further damage.
+</p>
+
+<div class="content-section">
+    <div class="content-image-wrapper">
+        <img src="../images/Chipped_Tooth.jpg" alt="Close-up of a chipped tooth" class="content-image">
+    </div>
+    <div class="content-text-wrapper">
+        <h3 class="content-subtitle">What Causes a Tooth to Chip?</h3>
+        <p class="content-description">
+            Teeth are incredibly strong, but they aren’t invincible. Common causes of chipped teeth include:
+        </p>
+        <ul class="highlight-list">
+            <li>Trauma or accidents such as falls or sports injuries</li>
+            <li>Biting or chewing hard foods like ice, nuts, or hard candies</li>
+            <li>Using teeth as tools to open packages or bottles</li>
+            <li>Teeth weakened by decay or large fillings</li>
+            <li>Bruxism (teeth grinding) that wears down enamel</li>
+        </ul>
+    </div>
+</div>
+
+<div class="content-section">
+    <div class="content-text-wrapper">
+        <h3 class="content-subtitle">Types of Chips and Their Severity</h3>
+        <p class="content-description">
+            Not all chips are the same. Understanding the type and extent of the damage helps determine the best treatment:
+        </p>
+        <ul class="highlight-list">
+            <li><strong>Minor chips:</strong> Small edges or surface enamel loss, usually painless.</li>
+            <li><strong>Moderate chips:</strong> Larger pieces missing, possible sensitivity or discomfort.</li>
+            <li><strong>Severe chips:</strong> Significant damage exposing the inner dentin or pulp, often painful and requiring urgent care.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="content-section">
+    <div class="content-text-wrapper">
+        <h3 class="content-subtitle">Why You Should See a Dentist Promptly</h3>
+        <p class="content-description">
+            Even a small chip can lead to further problems if untreated:
+        </p>
+        <ul class="highlight-list">
+            <li>Increased risk of tooth decay as protective enamel is lost</li>
+            <li>Sharp edges causing mouth or tongue cuts</li>
+            <li>Potential for tooth infection if the pulp is exposed</li>
+            <li>Changes in bite that can affect jaw alignment</li>
+        </ul>
+        <p class="content-description">
+            Early dental evaluation prevents complications and helps preserve your natural tooth.
+        </p>
+    </div>
+</div>
+
+<div class="highlight-box">
+    <p class="highlight-text">
+        A chipped tooth doesn’t have to ruin your smile. Modern dentistry offers many effective, minimally invasive options to restore both function and aesthetics.
+    </p>
+</div>
+
+<div class="content-section">
+    <div class="content-text-wrapper">
+        <h3 class="content-subtitle">Treatment Options for a Chipped Tooth</h3>
+        <p class="content-description">
+            Your dentist will recommend a treatment based on the chip size and tooth condition. Common options include:
+        </p>
+        <ul class="highlight-list">
+            <li><strong>Dental bonding:</strong> Applying tooth-colored resin to fill small chips and reshape the tooth.</li>
+            <li><strong>Veneers:</strong> Thin porcelain shells covering the front of the tooth for larger cosmetic repairs.</li>
+            <li><strong>Dental crowns:</strong> Caps that cover and protect severely damaged teeth.</li>
+            <li><strong>Root canal therapy:</strong> Needed if the tooth’s nerve is exposed or infected.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="content-section">
+    <div class="content-text-wrapper">
+        <h3 class="content-subtitle">Preventing Future Chips</h3>
+        <p class="content-description">
+            Protect your smile and reduce risk of chips by:
+        </p>
+        <ul class="highlight-list">
+            <li>Wearing a mouthguard during sports or high-impact activities</li>
+            <li>Avoiding chewing hard objects like ice or pens</li>
+            <li>Treating bruxism with nightguards or stress management</li>
+            <li>Maintaining regular dental check-ups to monitor tooth health</li>
+        </ul>
+    </div>
+</div>
+
+<p class="intro-text">
+    If you notice a chipped tooth or experience sensitivity, don’t wait. Contact us today for a thorough evaluation and personalized care to restore your smile and protect your oral health.
+</p>
+
+
+        </main>
+
+        <!-- Right Sidebar Navigation -->
+        <aside class="sidebar-navigation">
+            <h3 class="sidebar-title">Our Services</h3>
+            <nav class="services-nav">
+                <ul class="main-content-nav-list">
+                    <li class="main-content-nav-item">
+                        <a href="../html/DentalImplants.html" class="main-content-nav-link main-content-nav-link-active">
+                            <span class="main-content-nav-text">Dental Implants</span>
+                            <span class="main-content-nav-arrow">→</span>
+                        </a>
+                    </li>
+                    <li class="main-content-nav-item">
+                        <a href="../html/ComprehensiveCheck-Up.html" class="main-content-nav-link">
+                            <span class="main-content-nav-text">Comprehensive Check-Up</span>
+                            <span class="main-content-nav-arrow">→</span>
+                        </a>
+                    </li>
+                    <li class="main-content-nav-item">
+                        <a href="../html/Veneers.html" class="main-content-nav-link" >
+                            <span class="main-content-nav-text">Veneers</span>
+                            <span class="main-content-nav-arrow">→</span>
+                        </a>
+                    </li>
+                    <li class="main-content-nav-item">
+                        <a href="../html/TeethWhitening.html" class="main-content-nav-link">
+                            <span class="main-content-nav-text">Teeth Whitening</span>
+                            <span class="main-content-nav-arrow">→</span>
+                        </a>
+                    </li>
+                    <li class="main-content-nav-item">
+                        <a href="../html/Children'sDentistry.html" class="main-content-nav-link" >
+                            <span class="main-content-nav-text">Children's Dentistry</span>
+                            <span class="main-content-nav-arrow">→</span>
+                        </a>
+                    </li>
+                    <li class="main-content-nav-item">
+                        <a href="../html/SleepApnea.html" class="main-content-nav-link" >
+                            <span class="main-content-nav-text">Sleep Apnea & Snoring Treatment</span>
+                            <span class="main-content-nav-arrow">→</span>
+                        </a>
+                    </li>
+                    <li class="main-content-nav-item">
+                        <a href="../html/ChippedTooth.html" class="main-content-nav-link" >
+                            <span class="main-content-nav-text">Chipped Tooth</span>
+                            <span class="main-content-nav-arrow">→</span>
+                        </a>
+                    </li>
+                    <li class="main-content-nav-item">
+                        <a href="../html/NightGrinding.html" class="main-content-nav-link" >
+                            <span class="main-content-nav-text">Night Grinding</span>
+                            <span class="main-content-nav-arrow">→</span>
+                        </a>
+                    </li>
+                    <li class="main-content-nav-item">
+                        <a href="../html/RootCanals.html" class="main-content-nav-link" >
+                            <span class="main-content-nav-text">Root Canals</span>
+                            <span class="main-content-nav-arrow">→</span>
+                        </a>
+                    </li>
+                    <li class="main-content-nav-item">
+                        <a href="../html/DentalCrowns.html" class="main-content-nav-link" >
+                            <span class="main-content-nav-text">Dental Crowns</span>
+                            <span class="main-content-nav-arrow">→</span>
+                        </a>
+                    </li>
+                    <li class="main-content-nav-item">
+                        <a href="../html/CosmeticDentistry.html" class="main-content-nav-link" >
+                            <span class="main-content-nav-text">Cosmetic Dentistry</span>
+                            <span class="main-content-nav-arrow">→</span>
+                        </a>
+                    </li>
+                    <li class="main-content-nav-item">
+                        <a href="../html/EmergencyDentistry.html" class="main-content-nav-link" >
+                            <span class="main-content-nav-text">Emergency Dentistry</span>
+                            <span class="main-content-nav-arrow">→</span>
+                        </a>
+                    </li>
+                    <li class="main-content-nav-item">
+                        <a href="../html/Orthodontics.html" class="main-content-nav-link" >
+                            <span class="main-content-nav-text">Orthodontics</span>
+                            <span class="main-content-nav-arrow">→</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+    </div>
+  </section>
+
+    <!-- MAIN CONTENT END -->
+
+    <!-- FOOTER START -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Dynamic Dental Care</h3>
+                <p>141 E Emmaus Ave, Allentown, PA 18103, United States</p>
+                <p>Phone: +1 (610) 365 3266</p>
+                <p>Email: info@dynamicdentalcare.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../html/DentalImplants.html">Our Services</a></li>
+                    <li><a href="../html/patientfinance.html">Patient Finance</a></li>
+                    <li><a href="../html/blog.html">About Us</a></li>
+                    <li><a href="../html/careers.html">Careers</a></li>
+                    <li><a href="../html/contactus.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Office Hours</h3>
+                <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
+                <p>Saturday: 9:00 AM - 2:00 PM</p>
+                <p>Sunday: Closed</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Dynamic Dental Care. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <!-- FOOTER END -->
+
+  <script src="../js/common.js"></script>
+  <script src="../js/services.js" class="js-script"></script>
+</body>
+
+</html>
