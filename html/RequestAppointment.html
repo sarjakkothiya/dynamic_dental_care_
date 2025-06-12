@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dynamic Dental Care</title>
     <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/book_appointment.css">
 </head>
 <body>
     <!-- HEADER START -->
     <header class="header-container">
         <div class="header-content">
             <!-- Logo Section -->
+            <a href="../index.html" style="text-decoration: none;">
             <div class="logo-section">
                 <div class="logo">
                     <img src="../images/logo.jpg" alt="Dental Logo" class="logo-img">
@@ -20,12 +22,14 @@
                     </div>
                 </div>
             </div>
+            </a>
 
             <!-- Right Content Area (Desktop) -->
             <div class="right-content">
                 <!-- Top Row - Contact Information -->
                 <div class="contact-row">
                     <div class="contact-info">
+                        <a href="tel:+16103653266" style="text-decoration: none;">
                         <div class="contact-item">
                             <div class="contact-icon">📞</div>
                             <div class="contact-details">
@@ -33,6 +37,7 @@
                                 <div>+1 610-365-3266</div>
                             </div>
                         </div>
+                        </a>
                         <a href="https://www.google.com/maps/place/Dynamic+Dental+Care+-+Allentown/@40.5811954,-75.4479687,17z/data=!3m1!4b1!4m6!3m5!1s0x89c43b0f1e82467b:0x3b84646845c47752!8m2!3d40.5811954!4d-75.4479687!16s%2Fg%2F11q93zb85t?entry=ttu&g_ep=EgoyMDI1MDYwOS4xIKXMDSoASAFQAw%3D%3D" style="text-decoration: none;">
                         <div class="contact-item">
                             <div class="contact-icon">📍</div>
@@ -43,7 +48,9 @@
                         </div>
                         </a>
                     </div>
+                    <a href="../html/RequestAppointment.html" style="text-decoration: none;">
                     <button class="book-appointment">Book An Appointment</button>
+                    </a>
                 </div>
 
                 <!-- Bottom Row - Navigation -->
@@ -87,8 +94,7 @@
                             <div class="dropdown-content">
                                 <a href="../html/contactus.html">Location & Hours</a>
                                 <a href="../html/RequestAppointment.html">Request Appointment</a>
-                                <a href="../html/PatientForms.html">Patient Forms</a>
-                                <a href="../html/contactus.html">Emergency Care</a>
+                                <a href="../html/emergency_care.html">Emergency Care</a>
                                 <a href="../html/faqs.html">FAQs</a>
                             </div>
                         </div>
@@ -138,8 +144,7 @@
             <div class="mobile-dropdown">
                     <a href="../html/contactus.html">Location & Hours</a>
                     <a href="../html/RequestAppointment.html">Request Appointment</a>
-                    <a href="../html/PatientForms.html">Patient Forms</a>
-                    <a href="../html/contactus.html">Emergency Care</a>
+                    <a href="../html/emergency_care.html">Emergency Care</a>
                     <a href="../html/faqs.html">FAQs</a>
             </div>
 
@@ -161,14 +166,298 @@
     <!-- HEADER END -->
 
     <!-- MAIN CONTENT START -->
-    <div class="main-content">
-        <section class="about">
-            <div class="about-text">
-                <h1>Request Appointment</h1>
-                <p>We are a modern dental clinic focused on patient comfort and excellent care. Our experienced team is committed to keeping your smile healthy and bright. With state-of-the-art technology and personalized treatment plans, we provide comprehensive dental services for the entire family.</p>
-            </div>
-        </section>
+    
+    <div class="main-section-container">
+        <div class="main-container">
+            <!-- Main Content -->
+            <main class="main-content">
+                <h1 class="content-title">Book Your Appointment</h1>
+                
+                <p class="intro-text">
+                    We're excited to help you achieve optimal oral health! Please fill out the form below to schedule your appointment. Our team will contact you within 24 hours to confirm your appointment time and answer any questions you may have.
+                </p>
+
+                <div class="emergency-note">
+                    <p><strong>Need Emergency Care?</strong> For urgent dental issues, please call us directly at <a href="tel:+1234567890" class="emergency-phone">+1 610-365-3266</a></p>
+                </div>
+
+                <form class="appointment-form" id="appointmentForm">
+                    <!-- Personal Information Section -->
+                    <div class="form-section">
+                        <h2 class="form-section-title">Personal Information</h2>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label" for="firstName">First Name <span class="required">*</span></label>
+                                <input type="text" id="firstName" name="firstName" class="form-input" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="lastName">Last Name <span class="required">*</span></label>
+                                <input type="text" id="lastName" name="lastName" class="form-input" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label" for="email">Email Address <span class="required">*</span></label>
+                                <input type="email" id="email" name="email" class="form-input" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="phone">Phone Number <span class="required">*</span></label>
+                                <input type="tel" id="phone" name="phone" class="form-input" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label" for="dateOfBirth">Date of Birth</label>
+                                <input type="date" id="dateOfBirth" name="dateOfBirth" class="form-input">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="gender">Gender</label>
+                                <select id="gender" name="gender" class="form-select">
+                                    <option value="">Select Gender</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                    <option value="other">Other</option>
+                                    <option value="prefer-not-to-say">Prefer not to say</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group full-width">
+                                <label class="form-label" for="address">Address</label>
+                                <input type="text" id="address" name="address" class="form-input" placeholder="Street Address">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label" for="city">City</label>
+                                <input type="text" id="city" name="city" class="form-input">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="state">State</label>
+                                <input type="text" id="state" name="state" class="form-input">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="zipCode">ZIP Code</label>
+                                <input type="text" id="zipCode" name="zipCode" class="form-input">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Appointment Details Section -->
+                    <div class="form-section">
+                        <h2 class="form-section-title">Appointment Details</h2>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label" for="appointmentType">Type of Appointment <span class="required">*</span></label>
+                                <select id="appointmentType" name="appointmentType" class="form-select" required>
+                                    <option value="">Select Appointment Type</option>
+                                    <option value="routine-cleaning">Routine Cleaning</option>
+                                    <option value="consultation">Consultation</option>
+                                    <option value="dental-exam">Dental Exam</option>
+                                    <option value="cosmetic-consultation">Cosmetic Consultation</option>
+                                    <option value="teeth-whitening">Teeth Whitening</option>
+                                    <option value="dental-implant">Dental Implant Consultation</option>
+                                    <option value="orthodontic-consultation">Orthodontic Consultation</option>
+                                    <option value="root-canal">Root Canal Treatment</option>
+                                    <option value="veneers">Veneers Consultation</option>
+                                    <option value="sleep-apnea">Sleep Apnea Consultation</option>
+                                    <option value="chipped-tooth">Chipped Tooth Repair</option>
+                                    <option value="Childrens-dentistry">Children's Dentistry</option>
+                                    <option value="night-grinding">Night Grinding Consultation</option>
+                                    <option value="cosmetic-dentistry">Cosmetic Dentistry Consultation</option>
+                                    <option value="crown-bridge">Crown/Bridge Consultation</option>
+                                    <option value="emergency">Emergency Appointment</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="preferredDate">Preferred Date <span class="required">*</span></label>
+                                <input type="date" id="preferredDate" name="preferredDate" class="form-input" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Preferred Time <span class="required">*</span></label>
+                            <div class="time-slots">
+                                <div class="time-slot" data-time="08:00">8:00 AM</div>
+                                <div class="time-slot" data-time="09:00">9:00 AM</div>
+                                <div class="time-slot" data-time="10:00">10:00 AM</div>
+                                <div class="time-slot" data-time="11:00">11:00 AM</div>
+                                <div class="time-slot" data-time="13:00">1:00 PM</div>
+                                <div class="time-slot" data-time="14:00">2:00 PM</div>
+                                <div class="time-slot" data-time="15:00">3:00 PM</div>
+                                <div class="time-slot" data-time="16:00">4:00 PM</div>
+                            </div>
+                            <input type="hidden" id="preferredTime" name="preferredTime">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Patient Type</label>
+                            <div class="form-radio-group">
+                                <div class="form-radio-item">
+                                    <input type="radio" id="newPatient" name="patientType" value="new" class="form-radio">
+                                    <label for="newPatient" class="form-radio-label">New Patient</label>
+                                </div>
+                                <div class="form-radio-item">
+                                    <input type="radio" id="existingPatient" name="patientType" value="existing" class="form-radio">
+                                    <label for="existingPatient" class="form-radio-label">Existing Patient</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Medical History Section -->
+                    <div class="form-section">
+                        <h2 class="form-section-title">Medical History</h2>
+                        
+                        <div class="form-group">
+                            <label class="form-label">Do you have any of the following conditions? (Check all that apply)</label>
+                            <div class="form-checkbox-group">
+                                <div class="form-checkbox-item">
+                                    <input type="checkbox" id="diabetes" name="medicalConditions" value="diabetes" class="form-checkbox">
+                                    <label for="diabetes" class="form-checkbox-label">Diabetes</label>
+                                </div>
+                                <div class="form-checkbox-item">
+                                    <input type="checkbox" id="heartDisease" name="medicalConditions" value="heart-disease" class="form-checkbox">
+                                    <label for="heartDisease" class="form-checkbox-label">Heart Disease</label>
+                                </div>
+                                <div class="form-checkbox-item">
+                                    <input type="checkbox" id="highBloodPressure" name="medicalConditions" value="high-blood-pressure" class="form-checkbox">
+                                    <label for="highBloodPressure" class="form-checkbox-label">High Blood Pressure</label>
+                                </div>
+                                <div class="form-checkbox-item">
+                                    <input type="checkbox" id="allergies" name="medicalConditions" value="allergies" class="form-checkbox">
+                                    <label for="allergies" class="form-checkbox-label">Allergies</label>
+                                </div>
+                                <div class="form-checkbox-item">
+                                    <input type="checkbox" id="pregnancy" name="medicalConditions" value="pregnancy" class="form-checkbox">
+                                    <label for="pregnancy" class="form-checkbox-label">Pregnancy</label>
+                                </div>
+                                <div class="form-checkbox-item">
+                                    <input type="checkbox" id="none" name="medicalConditions" value="none" class="form-checkbox">
+                                    <label for="none" class="form-checkbox-label">None of the above</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label" for="medications">Current Medications</label>
+                                <textarea id="medications" name="medications" class="form-textarea" placeholder="List any medications you are currently taking"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="allergiesList">Allergies (if any)</label>
+                                <textarea id="allergiesList" name="allergiesList" class="form-textarea" placeholder="List any allergies to medications, foods, or materials"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Dental History Section -->
+                    <div class="form-section">
+                        <h2 class="form-section-title">Dental History</h2>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label" for="lastDentalVisit">When was your last dental visit?</label>
+                                <select id="lastDentalVisit" name="lastDentalVisit" class="form-select">
+                                    <option value="">Select timeframe</option>
+                                    <option value="less-than-6-months">Less than 6 months ago</option>
+                                    <option value="6-12-months">6-12 months ago</option>
+                                    <option value="1-2-years">1-2 years ago</option>
+                                    <option value="more-than-2-years">More than 2 years ago</option>
+                                    <option value="never">Never</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="dentalPain">Are you currently experiencing dental pain?</label>
+                                <select id="dentalPain" name="dentalPain" class="form-select">
+                                    <option value="">Select option</option>
+                                    <option value="none">No pain</option>
+                                    <option value="mild">Mild pain</option>
+                                    <option value="moderate">Moderate pain</option>
+                                    <option value="severe">Severe pain</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="dentalConcerns">What are your main dental concerns or reasons for this visit?</label>
+                            <textarea id="dentalConcerns" name="dentalConcerns" class="form-textarea" placeholder="Please describe any dental issues, concerns, or goals you have"></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Insurance Information Section -->
+                    <div class="form-section">
+                        <h2 class="form-section-title">Insurance Information</h2>
+                        
+                        <div class="form-group">
+                            <label class="form-label">Do you have dental insurance?</label>
+                            <div class="form-radio-group">
+                                <div class="form-radio-item">
+                                    <input type="radio" id="hasInsurance" name="hasInsurance" value="yes" class="form-radio">
+                                    <label for="hasInsurance" class="form-radio-label">Yes</label>
+                                </div>
+                                <div class="form-radio-item">
+                                    <input type="radio" id="noInsurance" name="hasInsurance" value="no" class="form-radio">
+                                    <label for="noInsurance" class="form-radio-label">No</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label" for="insuranceProvider">Insurance Provider</label>
+                                <input type="text" id="insuranceProvider" name="insuranceProvider" class="form-input" placeholder="e.g., Delta Dental, Aetna, Cigna">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="memberId">Member ID</label>
+                                <input type="text" id="memberId" name="memberId" class="form-input">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Additional Information Section -->
+                    <div class="form-section">
+                        <h2 class="form-section-title">Additional Information</h2>
+                        
+                        <div class="form-group">
+                            <label class="form-label" for="additionalNotes">Additional Notes or Questions</label>
+                            <textarea id="additionalNotes" name="additionalNotes" class="form-textarea" placeholder="Any other information you'd like us to know or questions you have"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="howDidYouHear">How did you hear about us?</label>
+                            <select id="howDidYouHear" name="howDidYouHear" class="form-select">
+                                <option value="">Select option</option>
+                                <option value="google-search">Google Search</option>
+                                <option value="social-media">Social Media</option>
+                                <option value="friend-referral">Friend/Family Referral</option>
+                                <option value="doctor-referral">Doctor Referral</option>
+                                <option value="insurance-directory">Insurance Directory</option>
+                                <option value="advertisement">Advertisement</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="highlight-box">
+                        <p class="highlight-text">
+                            <strong>Please Note:</strong> This appointment request is not confirmed until our office contacts you. We will call you within 24 hours to confirm your appointment time and provide any additional instructions. If you have an emergency, please call our office directly.
+                        </p>
+                    </div>
+
+                    <button type="submit" class="submit-button">Submit Appointment Request</button>
+                </form>
+            </main>
+        </div>
     </div>
+
     <!-- MAIN CONTENT END -->
 
     <!-- FOOTER START -->
@@ -176,9 +465,18 @@
         <div class="footer-content">
             <div class="footer-section">
                 <h3>Dynamic Dental Care</h3>
-                <p>141 E Emmaus Ave, Allentown, PA 18103, United States</p>
-                <p>Phone: +1 (610) 365 3266</p>
-                <p>Email: info@dynamicdentalcare.com</p>
+
+                <a href="https://www.google.com/maps/place/Dynamic+Dental+Care+-+Allentown/@40.5811954,-75.4479687,17z/data=!3m1!4b1!4m6!3m5!1s0x89c43b0f1e82467b:0x3b84646845c47752!8m2!3d40.5811954!4d-75.4479687!16s%2Fg%2F11q93zb85t?entry=ttu&g_ep=EgoyMDI1MDYwOS4xIKXMDSoASAFQAw%3D%3D" style="text-decoration: none;">
+                <p style="color: white;">141 E Emmaus Ave, Allentown, PA 18103, United States</p>
+                </a>
+                
+                <a href="tel:+16103653266" style="text-decoration: none;">
+                <p style="color: white;">Phone: +1 (610) 365 3266</p>
+                </a>
+                
+                <a href="mailto:info@dynamicdentalcare.com" style="text-decoration: none;">
+                <p style="color: white;">Email: info@dynamicdentalcare.com</p>
+            </a>
             </div>
             <div class="footer-section">
                 <h3>Quick Links</h3>
@@ -209,6 +507,7 @@
     <!-- FOOTER END -->
 
  <script src="../js/common.js"></script>
+ <script src="book_appointment.js"></script>
 </body>
 
 </html>

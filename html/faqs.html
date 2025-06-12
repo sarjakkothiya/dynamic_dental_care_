@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dynamic Dental Care</title>
     <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/faqs.css">
 </head>
 <body>
     <!-- HEADER START -->
     <header class="header-container">
         <div class="header-content">
             <!-- Logo Section -->
+            <a href="../index.html" style="text-decoration: none;">
             <div class="logo-section">
                 <div class="logo">
                     <img src="../images/logo.jpg" alt="Dental Logo" class="logo-img">
@@ -20,12 +22,14 @@
                     </div>
                 </div>
             </div>
+            </a>
 
             <!-- Right Content Area (Desktop) -->
             <div class="right-content">
                 <!-- Top Row - Contact Information -->
                 <div class="contact-row">
                     <div class="contact-info">
+                        <a href="tel:+16103653266" style="text-decoration: none;">
                         <div class="contact-item">
                             <div class="contact-icon">📞</div>
                             <div class="contact-details">
@@ -33,6 +37,7 @@
                                 <div>+1 610-365-3266</div>
                             </div>
                         </div>
+                        </a>
                         <a href="https://www.google.com/maps/place/Dynamic+Dental+Care+-+Allentown/@40.5811954,-75.4479687,17z/data=!3m1!4b1!4m6!3m5!1s0x89c43b0f1e82467b:0x3b84646845c47752!8m2!3d40.5811954!4d-75.4479687!16s%2Fg%2F11q93zb85t?entry=ttu&g_ep=EgoyMDI1MDYwOS4xIKXMDSoASAFQAw%3D%3D" style="text-decoration: none;">
                         <div class="contact-item">
                             <div class="contact-icon">📍</div>
@@ -43,7 +48,9 @@
                         </div>
                         </a>
                     </div>
+                    <a href="../html/RequestAppointment.html" style="text-decoration: none;">
                     <button class="book-appointment">Book An Appointment</button>
+                    </a>
                 </div>
 
                 <!-- Bottom Row - Navigation -->
@@ -87,8 +94,7 @@
                             <div class="dropdown-content">
                                 <a href="../html/contactus.html">Location & Hours</a>
                                 <a href="../html/RequestAppointment.html">Request Appointment</a>
-                                <a href="../html/PatientForms.html">Patient Forms</a>
-                                <a href="../html/contactus.html">Emergency Care</a>
+                                <a href="../html/emergency_care.html">Emergency Care</a>
                                 <a href="../html/faqs.html">FAQs</a>
                             </div>
                         </div>
@@ -138,8 +144,7 @@
             <div class="mobile-dropdown">
                     <a href="../html/contactus.html">Location & Hours</a>
                     <a href="../html/RequestAppointment.html">Request Appointment</a>
-                    <a href="../html/PatientForms.html">Patient Forms</a>
-                    <a href="../html/contactus.html">Emergency Care</a>
+                    <a href="../html/emergency_care.html">Emergency Care</a>
                     <a href="../html/faqs.html">FAQs</a>
             </div>
 
@@ -161,14 +166,226 @@
     <!-- HEADER END -->
 
     <!-- MAIN CONTENT START -->
-    <div class="main-content">
-        <section class="about">
-            <div class="about-text">
-                <h1>FAQS</h1>
-                <p>We are a modern dental clinic focused on patient comfort and excellent care. Our experienced team is committed to keeping your smile healthy and bright. With state-of-the-art technology and personalized treatment plans, we provide comprehensive dental services for the entire family.</p>
+<div class="main-container">
+        <!-- Main Content -->
+        <div class="main-content">
+            <h1 class="content-title">Frequently Asked Questions</h1>
+            <p class="intro-text">
+                We understand that visiting the dentist can raise many questions. Here are answers to some of the most common questions our patients ask. If you don't find what you're looking for, please don't hesitate to contact us directly.
+            </p>
+
+            <div class="faq-container">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(0)">
+                        <span>How can you help with my dental anxiety?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-text">
+                            Relax! Dental anxiety is a common problem for many patients of different age groups. In fact, more than 40% of people have some form of dental fear. At Aspire Dental Studio, we help you feel comfortable before, during and after your treatment. Our dental team is always transparent and thoughtful with our patients. We also offer soothing amenities like warm compress, music and essential oils to provide a more relaxing environment.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(1)">
+                        <span>Are check-ins quick in your office?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-text">
+                            Yes! We value your time and have streamlined our check-in process. Most patients can complete their check-in within 5-10 minutes. We also offer online pre-registration forms that you can fill out before your visit to make the process even faster. Our friendly front desk staff is always ready to assist you with any questions during check-in.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(2)">
+                        <span>How often are teeth cleanings and dental examinations recommended?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-text">
+                            Most patients should have dental cleanings and examinations every six months. However, some patients with gum disease, a history of cavities, or other oral health issues may need more frequent visits (every 3-4 months). During your examination, we'll assess your individual needs and recommend the appropriate schedule for your optimal oral health.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(3)">
+                        <span>How much does my dental treatment cost?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-text">
+                            Treatment costs vary depending on the specific procedures needed. We provide detailed treatment estimates before any work begins and will discuss all options with you. We accept most major insurance plans and offer flexible payment options including payment plans. Our team will work with your insurance to maximize your benefits and help make treatment affordable.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(4)">
+                        <span>Do you accept dental insurance?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-text">
+                            Yes, we accept most major dental insurance plans. Our knowledgeable staff will verify your benefits and help you understand your coverage before treatment begins. We'll also handle the insurance paperwork and file claims directly with your insurance company to make the process as convenient as possible for you.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 6 -->
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(5)">
+                        <span>What should I expect during my first visit?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-text">
+                            Your first visit will include a comprehensive oral examination, digital X-rays (if needed), and a thorough cleaning. We'll review your medical and dental history, discuss any concerns you may have, and create a personalized treatment plan. The entire visit typically takes 60-90 minutes, and we'll make sure you're comfortable throughout the process.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 7 -->
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(6)">
+                        <span>Is teeth whitening safe?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-text">
+                            Yes, professional teeth whitening is safe when performed by dental professionals. We use proven whitening systems that are much safer and more effective than over-the-counter products. Some patients may experience temporary tooth sensitivity, but this typically subsides within 24-48 hours. We'll evaluate your teeth and gums to ensure you're a good candidate for whitening.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 8 -->
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(7)">
+                        <span>How long do dental implants last?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-text">
+                            With proper care and maintenance, dental implants can last 25 years or even a lifetime. The success of your implant depends on factors such as good oral hygiene, regular dental visits, not smoking, and overall health. The crown portion may need replacement after 10-15 years due to normal wear, but the implant itself can remain stable for decades.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 9 -->
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(8)">
+                        <span>What payment options do you offer?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-text">
+                            We offer several convenient payment options including cash, check, credit cards (Visa, MasterCard, American Express, Discover), and CareCredit financing. We also provide in-house payment plans for larger treatments. Our goal is to make quality dental care accessible and affordable for all our patients.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 10 -->
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(9)">
+                        <span>Do you offer emergency dental services?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-text">
+                            Yes, we provide emergency dental services for our patients. If you have a dental emergency during office hours, please call immediately and we'll do our best to see you the same day. For after-hours emergencies, we have an on-call system to provide guidance and urgent care when needed. Common emergencies include severe toothaches, broken teeth, and dental trauma.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 11 -->
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(10)">
+                        <span>How can I prepare my child for their first dental visit?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-text">
+                            Start by reading books about going to the dentist and playing "dentist" at home. Keep the conversation positive and avoid using words that might cause fear. Bring a comfort item like a favorite toy or blanket. Schedule the appointment for a time when your child is well-rested and fed. Our team is specially trained to work with children and make their visit fun and comfortable.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 12 -->
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(11)">
+                        <span>What is the difference between a crown and a filling?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-text">
+                            Fillings are used to repair small to moderate areas of decay and are placed directly into the cleaned cavity. Crowns are used when a tooth is severely damaged, has a large filling, or has undergone root canal treatment. A crown covers the entire visible portion of the tooth above the gum line, providing strength and protection. Crowns are typically made of porcelain, metal, or a combination of both.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 13 -->
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(12)">
+                        <span>How often should I brush and floss my teeth?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-text">
+                            You should brush your teeth at least twice a day (morning and before bed) with fluoride toothpaste for at least two minutes each time. Flossing should be done once daily, preferably before bedtime, to remove plaque and food particles between teeth where your toothbrush can't reach. Using an antimicrobial mouthwash can also help reduce bacteria and freshen breath.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 14 -->
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(13)">
+                        <span>What are the signs that I need a root canal?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-text">
+                            Common signs include severe toothache when chewing or applying pressure, prolonged sensitivity to hot or cold temperatures, discoloration of the tooth, swelling and tenderness in nearby gums, or a recurring pimple on the gums. However, sometimes there are no symptoms. Regular dental check-ups can help identify the need for root canal treatment before pain develops.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 15 -->
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(14)">
+                        <span>How long does a typical dental appointment take?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-text">
+                            Appointment length varies by treatment type. A routine cleaning and exam typically takes 45-60 minutes. Simple procedures like fillings may take 30-60 minutes, while more complex treatments like crowns or root canals may require 60-90 minutes or multiple appointments. We'll always provide an estimated time when scheduling your appointment and keep you informed of any changes.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 16 -->
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(15)">
+                        <span>Can I eat normally after dental treatment?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-text">
+                            This depends on the type of treatment you received. After routine cleanings, you can eat normally right away. For fillings, wait until the numbness wears off to avoid biting your tongue or cheek. After extractions or oral surgery, stick to soft foods for the first few days. We'll provide specific post-treatment instructions and dietary recommendations for your particular procedure.
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>
+        </div>
     </div>
+
     <!-- MAIN CONTENT END -->
 
     <!-- FOOTER START -->
@@ -176,9 +393,18 @@
         <div class="footer-content">
             <div class="footer-section">
                 <h3>Dynamic Dental Care</h3>
-                <p>141 E Emmaus Ave, Allentown, PA 18103, United States</p>
-                <p>Phone: +1 (610) 365 3266</p>
-                <p>Email: info@dynamicdentalcare.com</p>
+
+                <a href="https://www.google.com/maps/place/Dynamic+Dental+Care+-+Allentown/@40.5811954,-75.4479687,17z/data=!3m1!4b1!4m6!3m5!1s0x89c43b0f1e82467b:0x3b84646845c47752!8m2!3d40.5811954!4d-75.4479687!16s%2Fg%2F11q93zb85t?entry=ttu&g_ep=EgoyMDI1MDYwOS4xIKXMDSoASAFQAw%3D%3D" style="text-decoration: none;">
+                <p style="color: white;">141 E Emmaus Ave, Allentown, PA 18103, United States</p>
+                </a>
+                
+                <a href="tel:+16103653266" style="text-decoration: none;">
+                <p style="color: white;">Phone: +1 (610) 365 3266</p>
+                </a>
+                
+                <a href="mailto:info@dynamicdentalcare.com" style="text-decoration: none;">
+                <p style="color: white;">Email: info@dynamicdentalcare.com</p>
+            </a>
             </div>
             <div class="footer-section">
                 <h3>Quick Links</h3>
@@ -208,7 +434,7 @@
     </footer>
     <!-- FOOTER END -->
 
-  <script src="../js/common.js"></script>
+  <script src="../js/faqs.js"></script>
 </body>
 
 </html>

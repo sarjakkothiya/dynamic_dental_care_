@@ -1,0 +1,317 @@
+/* Reset and Base Styles */
+        .html-root {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .html-root *,
+        .html-root *::before,
+        .html-root *::after {
+            box-sizing: inherit;
+        }
+
+        .main-section-container {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Main Container */
+        .main-container {
+            display: flex;
+            max-width: 1400px;
+            margin: 2rem auto;
+            gap: 2rem;
+            padding: 0 1rem;
+        }
+
+        /* Main Content Styles */
+        .main-content {
+            flex: 1;
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        .content-title {
+            color: #2c3e50;
+            font-size: 2.2rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 3px solid #6bb5ad;
+            padding-bottom: 0.5rem;
+        }
+
+        .intro-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+            color: #555;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #dceae8, #b4e3de);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #6bb5ad;
+            margin: 2rem 0;
+        }
+
+        .highlight-text {
+            font-size: 1rem;
+            line-height: 1.7;
+            color: #666;
+            margin: 0;
+        }
+
+        /* Form Styles */
+        .appointment-form {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+        }
+
+        .form-section {
+            margin-bottom: 2rem;
+        }
+
+        .form-section-title {
+            color: #2c3e50;
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #6bb5ad;
+            padding-bottom: 0.5rem;
+        }
+
+        .form-row {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .form-group {
+            flex: 1;
+        }
+
+        .form-group.full-width {
+            flex: 1 1 100%;
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #2c3e50;
+            font-weight: 500;
+        }
+
+        .form-input,
+        .form-select,
+        .form-textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 2px solid #e0e0e0;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+            background: white;
+        }
+
+        .form-input:focus,
+        .form-select:focus,
+        .form-textarea:focus {
+            outline: none;
+            border-color: #6bb5ad;
+            box-shadow: 0 0 0 3px rgba(107, 181, 173, 0.1);
+        }
+
+        .form-textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .form-checkbox-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 0.5rem;
+        }
+
+        .form-checkbox-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .form-checkbox {
+            width: 18px;
+            height: 18px;
+            accent-color: #6bb5ad;
+        }
+
+        .form-checkbox-label {
+            color: #666;
+            font-size: 0.95rem;
+        }
+
+        .form-radio-group {
+            display: flex;
+            gap: 1.5rem;
+            margin-top: 0.5rem;
+        }
+
+        .form-radio-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .form-radio {
+            width: 18px;
+            height: 18px;
+            accent-color: #6bb5ad;
+        }
+
+        .form-radio-label {
+            color: #666;
+            font-size: 0.95rem;
+        }
+
+        .time-slots {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+        }
+
+        .time-slot {
+            padding: 0.8rem;
+            border: 2px solid #e0e0e0;
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            background: white;
+        }
+
+        .time-slot:hover {
+            border-color: #6bb5ad;
+            background: #f0f8f7;
+        }
+
+        .time-slot.selected {
+            background: linear-gradient(135deg, #6bb5ad, #4db6ac);
+            color: white;
+            border-color: #6bb5ad;
+        }
+
+        .submit-button {
+            background: linear-gradient(135deg, #6bb5ad, #4db6ac);
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(107, 181, 173, 0.3);
+        }
+
+        .submit-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(107, 181, 173, 0.4);
+        }
+
+        .required {
+            color: #e74c3c;
+        }
+
+        .emergency-note {
+            background: linear-gradient(135deg, #e74c3c, #c0392b);
+            color: white;
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+            margin: 1rem 0;
+        }
+
+        .emergency-note p {
+            margin: 0;
+        }
+
+        .emergency-phone {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .emergency-phone:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            .main-container {
+                flex-direction: column;
+                margin: 1rem auto;
+            }
+
+            .form-row {
+                flex-direction: column;
+            }
+
+            .content-title {
+                font-size: 1.8rem;
+            }
+
+            .time-slots {
+                grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            }
+
+            .form-radio-group {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .main-container {
+                padding: 0 0.5rem;
+            }
+
+            .main-content {
+                padding: 1.5rem;
+            }
+
+            .appointment-form {
+                padding: 1.5rem;
+            }
+
+            .time-slots {
+                grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+            .main-content {
+                padding: 1rem;
+            }
+
+            .appointment-form {
+                padding: 1rem;
+            }
+
+            .content-title {
+                font-size: 1.5rem;
+            }
+
+            .form-section-title {
+                font-size: 1.2rem;
+            }
+        }
